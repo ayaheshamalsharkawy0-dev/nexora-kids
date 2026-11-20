@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نيكسورا كيدز | عالم ألعاب الأطفال الممتع والتعليمي</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- شريط التنقل العلوي -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#home" class="logo">نيكسورا <span>كيدز</span></a>
+            <nav class="nav-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#collection">الألعاب</a>
+                <a href="#about">لماذا نيكسورا؟</a>
+            </nav>
+            <button class="cart-btn" id="open-cart">
+                حقيبة اللعب (<span id="cart-count">0</span>)
+            </button>
+        </div>
+    </header>
+
+    <!-- الواجهة الرئيسية -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="subtitle">تشكيلة ألعاب جديدة ومبهجة</span>
+                <h1>لعب ممتع، خيال أوسع، وتعلّم يبدأ من أول خطوة.</h1>
+                <p>اخترنا لكم مجموعة مختارة بعناية من ألعاب البناء والتركيب، الدمى الناعمة، ألعاب الذكاء والتعلّم، وأنشطة الحركة والفن لتناسب فضول الأطفال في كل مرحلة.</p>
+                <div class="hero-actions">
+                    <a href="#collection" class="btn-primary">تصفح الألعاب</a>
+                    <a href="#about" class="btn-secondary">اكتشف المزيد</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="images/hero.jpg" alt="تشكيلة ألعاب أطفال من نيكسورا كيدز">
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات والفلترة -->
+    <section class="products-section" id="collection">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">عالم مليء بالاكتشاف</span>
+                <h2>تشكيلة الألعاب المختارة</h2>
+
+                <!-- أزرار الفلترة -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">الكل</button>
+                    <button class="filter-btn" data-category="building">البناء والتركيب</button>
+                    <button class="filter-btn" data-category="dolls">الدمى والشخصيات</button>
+                    <button class="filter-btn" data-category="learning">الذكاء والتعلّم</button>
+                    <button class="filter-btn" data-category="play">الحركة والفن</button>
+                </div>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                <!-- سيتم تحميل المنتجات تلقائياً عبر الجافا سكريبت -->
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المميزات والرؤية -->
+    <section class="about-section" id="about">
+        <div class="container about-content">
+            <span class="subtitle">رؤية نيكسورا كيدز</span>
+            <h2>ألعاب آمنة تُنمّي المهارات وتصنع الابتسامة</h2>
+            <p>في نيكسورا كيدز نؤمن أن اللعب هو أفضل وسيلة للتعلّم وبناء الثقة، لذلك نجمع بين التصاميم اللطيفة، الألوان المريحة للعين، والأفكار التي تحفّز الإبداع والتركيز.</p>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h4>تصميم صديق للطفل</h4>
+                    <p>خامات ناعمة وأشكال مريحة ومناسبة لليدين الصغيرات.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>تنمية المهارات</h4>
+                    <p>ألعاب تساعد على التفكير، التناسق الحركي، وحب الاستكشاف.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>ألوان مبهجة ومتوازنة</h4>
+                    <p>درجات دافئة ومريحة تحفّز الخيال دون إجهاد بصري.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>نيكسورا <span>كيدز</span></h3>
+                <p>جزء من منظومة نيكسورا لأسلوب حياة متكامل ومبهج.</p>
+            </div>
+            <p class="copyright">&copy; 2026 منظومة نيكسورا. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- حقيبة اللعب الجانبية -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>حقيبة اللعب</h3>
+            <button class="close-cart" id="close-cart" aria-label="إغلاق الحقيبة">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="empty-msg">حقيبة اللعب فارغة حالياً.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>الإجمالي</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="btn-primary checkout-btn" id="checkout-btn">إتمام الطلب</button>
+        </div>
+    </aside>
+
+    <!-- إشعار الإضافة -->
+    <div class="toast" id="toast">تمت إضافة اللعبة إلى الحقيبة</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
